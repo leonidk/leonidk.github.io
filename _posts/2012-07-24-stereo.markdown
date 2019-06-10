@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Stereoscopic depth reconstruction with probabilistic pixel correspondence search"
+date:   2012-07-24 22:21:59 +00:00
+image: /images/stereo.png
+categories: Intel
+patent: https://patents.google.com/patent/US8792710B2
+---
+A fast method for performing stereo depth maps. 
