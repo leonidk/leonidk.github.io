@@ -1,76 +1,74 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <title>{{ site.name }}</title>
 
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<head>
+  <title>{{ site.name }}</title>
 
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta name="author" content="{{ site.name }}" />
-    <meta name="viewport" content="width=500">
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=500">
 
-  </head>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+
+</head>
 
 
-  
+
 <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="67%" valign="middle">
-              <p align="center">
-                <personname>Leonid Keselman</personname>
-              </p>
+  <table style="width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:20px;width:67%;vertical-align:middle">
+              <h1>
+                Leonid Keselman
+              </h1>
               <p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, part of the <a href="https://www.scs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I work on 3D computer vision. My PhD advisor is <a href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>.
               </p>
               <p>
-                From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>.  I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> series RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016. 
+                From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>. I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016.
               </p>
               <p>
-                I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I did my BS in EECS at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab. 
+                I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I did my BS in EECS at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab.
               </p>
-              <p align=center>
+              <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/leonidk">GitHub</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
               </p>
             </td>
-            <td width="33%">
-              <img src="images/circle_bw_crop.jpg">
+            <td style="padding:20px;width:33%">
+              <img alt="profile photo" src="images/circle_bw_crop.jpg">
             </td>
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td width="100%" valign="middle">
-              <heading>Research</heading>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Research</h2>
               <p>
                 I'm interested in computer vision, machine learning, optimization, graphics and robotics.
               </p>
             </td>
           </tr>
         </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td width="25%">
-              <img src="/tn{{post.image}}"  style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
             </td>
-            <td valign="middle" width="75%">
-                <papertitle>{{post.title}}</papertitle>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
 
@@ -100,32 +98,34 @@
           {% endfor %}
           {% endfor %}
         </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <br>
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td width="100%" valign="middle">
-              <heading>Other Projects</heading>
-              <p> These include projects from my time in industry, coursework and fun side projects. 
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Other Projects</h2>
+              <p> These include projects from my time in industry, coursework and fun side projects.
               </p>
             </td>
           </tr>
         </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat != 'research' %}
           <tr>
-            <td width="25%">
-              <img src="/tn{{post.image}}"  style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
             </td>
-            <td valign="middle" width="75%">
-                <papertitle>{{post.title}}</papertitle>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em> 
+              <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
-              
+
               <br>
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
@@ -166,14 +166,12 @@
           {% endfor %}
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td>
+            <td style="padding:0px">
               <br>
-              <p align="center">
-                <font size="2">
-                  Design and source code from <a href="https://jonbarron.info">Jon Barron's website</a>
-                </font>
+              <p style="text-align:center;font-size:x-small;">
+                Design and source code from <a style="font-size:x-small;" href="https://jonbarron.info">Jon Barron's website</a>
               </p>
             </td>
           </tr>

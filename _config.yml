@@ -6,7 +6,7 @@
 name: Leonid Keselman
 
 # Short bio or description (displayed in the header)
-description: the profile of an engineer, researcher and software developer
+# description: the profile of an engineer, researcher and software developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: images/circle_bw_crop.jpg
@@ -48,7 +48,7 @@ url: "https://leonidk.com" # the base hostname & protocol for your site
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+#baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -74,9 +74,9 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+plugins:
+    #  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+    #  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
 exclude:
