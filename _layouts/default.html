@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <title>{{ site.name }}</title>
@@ -27,7 +27,7 @@
           <tr>
             <td width="67%" valign="middle">
               <p align="center">
-                <name>Leonid Keselman</name>
+                <personname>Leonid Keselman</personname>
               </p>
               <p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, part of the <a href="https://www.scs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I work on 3D computer vision. My PhD advisor is <a href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>.
               </p>
@@ -38,9 +38,9 @@
                 I have an MS in Computer Science from <a href="http://cs.stanford.edu">Stanford University</a>, where my focus was Machine Learning. While there, I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I did my BS in EECS at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab. 
               </p>
               <p align=center>
-                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp/&nbsp
-                <a href="https://github.com/leonidk">GitHub</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/leonidk">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
               </p>
             </td>
@@ -93,7 +93,7 @@
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
               <p></p>
-              <p>          {{ post.excerpt }}              </p>
+              {{ post.excerpt }}
             </td>
           </tr>
           {% endif %}
@@ -149,7 +149,7 @@
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
               <p></p>
-              <p>          {{ post.excerpt }}              </p>
+              {{ post.excerpt }}
             </td>
           </tr>
           {% endif %}
