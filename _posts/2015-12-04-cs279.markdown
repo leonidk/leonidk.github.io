@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Level-set based tracking and segmentation"
+date:   2015-12-04 22:22:59 +00:00
+image: /images/cs279.png
+categories: Stanford
+author: "Leo Keselman"
+subtitle: "Level-set based tracking and segmentation"
+code: https://github.com/leonidk/drlse
+paper: /pdfs/cs279.pdf
+course: "CS279: Structure and Organization of Biomolecules and Cells"
+---
+
+We implemented a detection and deformable tracking pipeline for red blood cells. 
+
+ including automated detection with a Hough Circle Transform, and deformable tracking with our own Python implementation of Distance Regularized Level Set Evolution on top of basic image processing primitives provided by Python’s scikit-image library (e.g. Gaussian Filters). We analyze the behavior of this tracking system and its shortcomings.
+
+
+[Paper PDF](/pdfs/cs279.pdf){:target="_blank"}
+
+[GitHub](https://github.com/leonidk/drlse){:target="_blank"}

@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Computational models for text summarization"
+date:   2017-03-18 22:20:59 +00:00
+image: /images/cs224n-poster.png
+categories: Stanford
+author: "Leo Keselman"
+subtitle: "RNNs language models"
+course: "CS224N: Natural Language Processing"
+poster: /pdfs/cs224n-poster.pdf
+paper: /pdfs/cs224n.pdf
+video: https://youtu.be/5TQEfSbpPvc
+code: https://github.com/ludwigschubert/cs224n-project
+---
+Work with [Ludwig Schubert](https://schubert.io/) on simplified encoders stages for text summarization.
+
+Abstractive text summarization is a blossoming area of natural language processing research in which short textual summaries are generated from longer input documents. Existing state-of-the-art methods take long time to train, and are limited to functioning on relatively short input sequences. We evaluate neural network architectures with simplified encoder stages, which naturally support arbitrarily long input sequences in a computationally efficient manner. 

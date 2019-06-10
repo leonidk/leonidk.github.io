@@ -1,51 +1,177 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{{ site.name }}</title>
 
-    {% include meta.html %}
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="viewport" content="width=500">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+  
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Leonid Keselman</name>
+              </p>
+              <p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, part of the <a href="https://www.scs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I work on 3D computer vision. My PhD advisor is <a href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>.
+              </p>
+              <p>
+                From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>.  I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016. 
+              </p>
+              <p>
+                I have an MS in Computer Science from <a href="http://cs.stanford.edu">Stanford University</a>, where my focus was Machine Learning. While there, I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I did my BS in EECS at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab. 
+              </p>
+              <p align=center>
+                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp/&nbsp
+                <a href="https://github.com/leonidk">GitHub</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
+              </p>
+            </td>
+            <td width="33%">
+              <img src="images/circle_bw_crop.jpg">
+            </td>
+          </tr>
+        </table>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in computer vision, machine learning, optimization, graphics and robotics.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td width="25%">
+              <img src="/tn{{post.image}}"  style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            </td>
+            <td valign="middle" width="75%">
+                <papertitle>{{post.title}}</papertitle>
+              <br>
+              {{post.authors}}
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              <p>          {{ post.excerpt }}              </p>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
 
-    {% include analytics.html %}
-  </body>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Other Projects</heading>
+              <p> These include projects from my time in industry, coursework and fun side projects. 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat != 'research' %}
+          <tr>
+            <td width="25%">
+              <img src="/tn{{post.image}}"  style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            </td>
+            <td valign="middle" width="75%">
+                <papertitle>{{post.title}}</papertitle>
+              <br>
+              <em>{{post.categories}} {{post.course}}</em> 
+              <br>
+              {{ post.date | date: "%Y-%m-%d" }}
+              
+              <br>
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+              <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              <p>          {{ post.excerpt }}              </p>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="center">
+                <font size="2">
+                  Design and source code from <a href="https://jonbarron.info">Jon Barron's website</a>
+                </font>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
 </html>

@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Project Tetra: Collaborative robot state estimation"
+date:   2011-07-21 22:21:59 +00:00
+image: /images/tetra-pcb.jpg
+categories: UC
+course: "Berkeley EE149: Embedded Systems"
+author: "Leo Keselman"
+subtitle: "Collaborative robot state estimation"
+---
+With Humphrey Hu, Ryan Julian, and Eric Yuan, a project to show the efficacy of multiple-robot collaborative state estimation. Using Wiimote cameras, mobile robot platforms, and real-time wireless communication. 
+
+The basic premise of the project was extending an iRobot iCreate mobile robot with an infrared imager (a Wiimote IR camera), and utilize the camera for real-time noisy estimates  of a target's position. We showed that such a mobile platform could localize a tetrahedral target to within a few centimeters in approximately 15 seconds. The project was further extended to add real-time, ZigBee-based networking to have multiple robots share observations and showed that the localization time decreased to five seconds and one second with two and three robots respectively. The project's technical nature was broad, and required the development of, among other components, particle filters distributed across multiple robots, real-time networking on embedded systems, mechatronic design, and a custom PCB design for the Wiimote's camera. The project was the focal point of the course, which was taught by Professor Edward Lee and Professor Sanjit Seshia.

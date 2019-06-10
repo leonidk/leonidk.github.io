@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Dynamics Based Hand Tracking"
+date:   2013-01-27 22:21:59 +00:00
+image: /images/i3d2013.png
+categories: research
+author: "Leo Keselman"
+subtitle: "Best Poster Award"
+authors: "Stan Melax, <strong>Leonid Keselman</strong>, Sterling Orsten"
+venue: "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games"
+poster: /pdfs/i3d_2013.pdf
+---
+
+A tracking algorithm that was real-time on a consumer laptop. **Won Best Poster Award**.
+
+[Poster PDF](/pdfs/i3d_2013.pdf){:target="_blank"}
+
+[ACM Citation](http://dl.acm.org/citation.cfm?id=2448232){:target="_blank"}
+
+[arXiv link](https://arxiv.org/abs/1705.07640){:target="_blank"}

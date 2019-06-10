@@ -2,16 +2,27 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<tr bgcolor="#ffffd0">
+  <td width="25%">
+      <img src='{{post.image}}'>
+  </td>
+  <td valign="middle" width="75%">
+      <papertitle>{{post.title}}</papertitle>
+    <br>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+    <br>
+    <em>{{post.category}}</em>, {{post.year}}
+    <br>
+    {% if post.arxiv %}
+    <a href="{{post.arxiv}}">arxiv</a> /
+    {% endif %}
+    {% if post.video %}
+    <a href="{{post.video}}">video</a> /
+    {% endif %}
+    {% if post.code %}
+    <a href="{{post.code}}">code</a> /
+    {% endif %}
+    <p></p>
+    <p>A single robust loss function is a superset of many other common robust loss functions, and allows training to automatically adapt the robustness of its own loss.</p>
+  </td>
+</tr>

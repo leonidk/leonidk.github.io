@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Dequantization of Depth Data"
+date:   2015-04-22 22:21:59 +00:00
+image: /images/dequant.jpg
+categories: Other
+author: "Leo Keselman"
+subtitle: "For higher quality normal maps"
+code: https://github.com/leonidk/qInterp
+---
+An O(1) time algorithm for producing smooth normals for quantized data, such as the Kinect. 
+
+
+[GitHub Link](https://github.com/leonidk/qInterp){:target="_blank"}

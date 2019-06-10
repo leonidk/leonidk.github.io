@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Learning Implicit Communication Strategies"
+date:   2017-06-10 21:21:53 +00:00
+image: /images/cs234.png
+categories: Stanford
+author: "Leo Keselman"
+course: "CS234: Deep Reinforcement Learning"
+---
+Work with  <a href="http://stanford.edu/~aaronjg/">Aaron Goodman</a> on used reinforcement learning to discover implicit collusion strategies in the context of an iterated prisoner’s dilemma. 
+
+We analyzed the techniques that are learned to understand how agents can develop signaling mechanisms over restricted communication channels. We implemented Deep RL methods, comparing Deep Q-Learning, Deep Q-Learning with an auxiliary loss function (which we designed to enable convergence), and Policy Gradient methods. These function approximators were over sequences of unknown length, for which we implemented and compared both Recurrent and Convolutional Neural Networks (pooling over time). 
+
+As this work is part of Aaron's on-going research, the paper submitted for the class project is not publicly available. 

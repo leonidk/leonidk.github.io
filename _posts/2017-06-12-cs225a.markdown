@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "A Maze Bot"
+date:   2017-06-12 21:21:53 +00:00
+image: /images/cs225a.jpg
+categories: Stanford
+author: "Leo Keselman"
+course: "CS225A: Experimental Robotics"
+video: https://www.youtube.com/watch?v=UcLmpWmIVzE
+video2: https://www.youtube.com/watch?v=MgCWEkhtqiQ
+paper: /pdfs/cs225a.pdf
+---
+Making a 6-DoF PUMA arm solve a maze with real-time vision and tracking. 
+
+The final project combined real-time vision, planning, and control into a success project for our Experimental Robotics Graduate class. 
+
+[CS225A Paper](/pdfs/cs225a.pdf){:target="_blank"}
+
+[Short demo video on YouTube](https://www.youtube.com/watch?v=UcLmpWmIVzE)
+
+[Longer demo video on YouTube](https://www.youtube.com/watch?v=MgCWEkhtqiQ)
+
+<center>
+<iframe src="http://www.youtube.com/embed/MgCWEkhtqiQ" frameborder="0" height="315" width="560"></iframe>
+</center>
