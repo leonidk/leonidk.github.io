@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Compact, low cost VCSEL projector"
+title:  "Compact VCSEL Projector"
 date:   2016-06-27 22:21:59 +00:00
 image: /images/vcsel.png
 categories: Intel

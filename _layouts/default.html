@@ -33,7 +33,7 @@
                 From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>. I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016.
               </p>
               <p>
-                I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I did my BS in EECS at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab.
+                I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I have a BS in EECS from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab.
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
@@ -104,8 +104,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include projects from my time in industry, coursework and fun side projects.
+              <h2>Intel Projects</h2>
+              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
               </p>
             </td>
           </tr>
@@ -114,7 +114,74 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'research' %}
+          {% if cat == 'Intel' %}
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              <em>{{post.categories}} {{post.course}}</em>
+              <br>
+              {{ post.date | date: "%Y-%m-%d" }}
+
+              <br>
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.patent %}
+              <a href="{{post.patent}}">patent</a> /
+              {% endif %}
+              {% if post.patent2 %}
+              <a href="{{post.patent2}}">patent #2</a> /
+              {% endif %}
+              {% if post.patent3 %}
+              <a href="{{post.patent3}}">patent #3</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+              <a href="{{post.video2}}">video #2</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Other Projects</h2>
+              <p> These include coursework, side projects and unpublished research work. 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat != 'research' and cat != 'Intel' %}
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />

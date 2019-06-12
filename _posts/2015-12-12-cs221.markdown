@@ -10,6 +10,7 @@ course: "CS221: Artificial Intelligence"
 code: https://github.com/leonidk/drbayes
 website: http://doctorbayes.com
 poster: /pdfs/cs229-poster.pdf
+paper: /pdfs/cs221.pdf
 ---
 
 Detecting disease from a short description of symptoms. In some small testing, obtained nearly 90% top 5 accuracy and about 60% top 1 accuracy 

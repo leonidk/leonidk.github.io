@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "CES 2012: Broken Glass Demo"
+date:   2012-01-10 22:21:59 +00:00
+image: /images/broken-glass.jpg
+categories: Intel
+author: "Leo Keselman"
+subtitle: "Hand Tracking Demo"
+video: http://www.youtube.com/embed/iywCOqZYVXg
+---
+Developed software-based computer vision algorithms for this CES demo
+
+ system's architecture, development and the implementation of necessary computer vision algorithms.
+<center>
+<iframe src="http://www.youtube.com/embed/iywCOqZYVXg" frameborder="0" height="315" width="560"></iframe>
+</center>

@@ -8,6 +8,7 @@ author: "Leo Keselman"
 subtitle: "Personalized Recommendations"
 course: "CS270: Modeling Biomedical Systems"
 paper: /pdfs/cs270.pdf
+poster: /pdfs/cs270-poster.pdf
 ---
 
 Using the [Yelp dataset](https://www.yelp.com/dataset) of reviews to model the semantics and relationships between cuisines, businesses and other properties useful for restaurant recommendations. 
