@@ -7,7 +7,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
   <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=500">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -18,12 +18,12 @@
 
 
 <body>
-  <table style="width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
-            <td style="padding:20px;width:67%;vertical-align:middle">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>
                 Leonid Keselman
               </h1>
@@ -42,15 +42,15 @@
                 <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
               </p>
             </td>
-            <td style="padding:20px;width:33%">
-              <img alt="profile photo" src="images/circle_bw_crop.jpg">
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/circle_bw_crop.jpg">
             </td>
           </tr>
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
                 I'm interested in computer vision, machine learning, optimization, graphics and robotics.
@@ -64,10 +64,10 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -103,7 +103,7 @@
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Intel Projects</h2>
               <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
               </p>
@@ -116,10 +116,10 @@
           {% for cat in post.categories %}
           {% if cat == 'Intel' %}
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
@@ -170,7 +170,7 @@
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Other Projects</h2>
               <p> These include coursework, side projects and unpublished research work. 
               </p>
@@ -183,10 +183,10 @@
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:160px; max-height:160px" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
