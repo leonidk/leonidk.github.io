@@ -54,7 +54,9 @@ url: "https://leonidk.com" # the base hostname & protocol for your site
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+#permalink: /:title/
+permalink: /
+
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
@@ -87,3 +89,5 @@ exclude:
   - CNAME
   - command.txt
   - todo.txt
+  - _temp/index.html
+  - _temp/
