@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Venue Analytics: A Simple Alternative to Citation-Based Metrics"
-date:   2019-06-04 22:21:59 +00:00
+title:  "Design of Scalable Superconducting Quantum Circuits Using Flip-Chip Assembly"
+date:  2023-02-10 22:00:00
 image: /images/jcdl2019.png
 categories: research
-author: "Leo Keselman"
-authors: "<strong>Leonid Keselman</strong>"
-venue: "ACM/IEEE Joint Conference on Digital Libraries"
-arxiv: https://arxiv.org/abs/1904.12573
-slides: /pdfs/jcdl2019.pdf
-code: https://github.com/leonidk/venue_scores
+author: "Seong Hyeon Park, Dowon Baek, Insung Park, Seungyong Hahn"
+authors: "Seong Hyeon Park,  <strong>Dowon Baek</strong>, Insung Park, Seungyong Hahn"
+venue: "IEEE Transactions on Applied Superconductivity"
+arxiv: 
+slides: 
+code: 
 ---
-A bibliometric/scientometric project. Our main two results are a method of assigning value to all venues in computer science and a method to organize them into distinct subfields, all without using citation data. The resulting venue scores can be used to rank universities' by scholarly output, and produce a responsive author-level metric.
+Flip-chip assembly of hexagonal superconducting transmon qubits combined with material and circuit topology optimization enabled high-fidelity quantum operations, which are necessary for building fault-tolerant quantum computers.

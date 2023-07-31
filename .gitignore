@@ -10,3 +10,8 @@ node_modules
 package.json
 tn/
 favicon.ico
+_old_posts/
+_backup_posts/
+bin/
+images/
+pdfs/
