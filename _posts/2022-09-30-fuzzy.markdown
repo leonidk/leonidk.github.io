@@ -6,7 +6,7 @@ image: /images/fuzzy22.png
 categories: research
 author: "Leo Keselman"
 authors: "<strong>Leonid Keselman</strong>, Martial Hebert"
-venue: "European Conference on Computer Vision"
+venue: "European Conference on Computer Vision (Oral)"
 arxiv: https://arxiv.org/abs/2207.10606
 code: https://github.com/leonidk/fuzzy-metaballs
 website: https://leonidk.github.io/fuzzy-metaballs/

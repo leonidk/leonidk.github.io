@@ -1,2 +1,3 @@
-mogrify -path tn/images -thumbnail 160x160 images/*.png
-mogrify -path tn/images -thumbnail 160x160 images/*.jpg
+for file in images/*.{jpg,png}; do
+    [ ! -f "tn/$file" ] && convert "$file"  -thumbnail 160x160 "tn/$file"
+done
